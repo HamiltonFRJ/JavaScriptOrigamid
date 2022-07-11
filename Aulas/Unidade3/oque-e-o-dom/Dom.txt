@@ -1,0 +1,4 @@
+Dom significa Document Object Model (DOM)
+
+É uma interface que representa documentos HTML e XML atrave´s de objetos. Com ela é possível manipular a estrutura, estilo e conteúdo destes documentos.
+

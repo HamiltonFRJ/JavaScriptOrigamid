@@ -1,0 +1,5 @@
+Color Hightlight
+VSCode icons
+Live Server
+Prettier
+Origamid Theme
