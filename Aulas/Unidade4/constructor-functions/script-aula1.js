@@ -28,6 +28,20 @@ function Carro(marcaNova, precoNovo) {
   this.marca = marcaNova;
   this.preco = precoNovo;
 }
+*/ 
 
-const city = new Carro('Honda', 44000);
+function Carro2(marca, precoInicial) {
+  const taxa = 1.2;
+  const precoFinal = precoInicial * taxa;
+  this.marca = marca;
+  this.preco = precoFinal;
+  console.log(this);
+}
+
+const honda = new Carro2('Honda', 44000);
+const mazda = new Carro2('Mazda', 87000);
+
+/* Variáveis dentro do objeto são protegidas
+this.'' fica exposta, const não!!
 */
+
