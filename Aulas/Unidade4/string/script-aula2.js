@@ -37,8 +37,7 @@ console.log(frutasArray.join('*'));
 
  const valor = ' R$ 23.00  ';
  console.log(valor.trim());  // 'R$ 23.00'
- console.log(valor.trimStart());  3// 'R$ 23.00  '
+ console.log(valor.trimStart());  // 'R$ 23.00  '
  console.log(valor.trimEnd());  // ' R$ 23.00'
 
  // Trim - remove os espaços
-
