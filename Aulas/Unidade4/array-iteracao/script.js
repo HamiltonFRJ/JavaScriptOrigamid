@@ -65,8 +65,65 @@
 // });
 // // se não passar valor inicial, ele fará uma iteração a menos
 
-const numeros = [10, 25, 60, 5, 35, 10];
-const maiorValor = numeros.reduce((anterior, atual) => {
- return anterior < atual ? atual : anterior;
+// const numeros = [10, 25, 60, 5, 35, 10];
+// const maiorValor = numeros.reduce((anterior, atual) => {
+//  return anterior < atual ? atual : anterior;
+// });
+// maiorValor; // 60
+
+const aulas = [
+  {
+    nome: "HTML 1",
+    min: 15,
+  },
+  {
+    nome: "HTML 2",
+    min: 10,
+  },
+  {
+    nome: "CSS 1",
+    min: 20,
+  },
+  {
+    nome: "JS 1",
+    min: 25,
+  },
+];
+
+// var acumulador = {};
+// acumulador[0] = "aleatorio";
+
+// const listaAulas = aulas.reduce((acumulador, aula, index) => {
+//   acumulador[index] = aula.nome;
+//   console.log(acumulador);
+//   return acumulador;
+// }, {});
+
+// const frutas = ["Banana", "Pêra", "Uva"];
+
+// const frutasRight = frutas.reduceRight((acc, fruta) => acc + "");
+// const frutasLeft = frutas.reduce((acc, fruta) => acc + "");
+
+// frutasRight; // Uva Pêra Banana
+// frutasLeft; // Banana Pêra Uva
+
+// [].some(), se pelo menos um return da iteração for truthy, ele retorna true.
+
+// const frutas = ["Banana", "Pêra", "Uva"];
+// const temUva = frutas.some((fruta) => {
+//   return fruta === "Uva";
+// }); // true
+
+// console.log(temUva); // true
+
+// [].every(), se todos os returns das iterações forem truthy, o método irá retornar true. Se pelo menos um for falsy, ele irá retornar false.
+
+const frutas = ["Banana", "Pêra", "Uva", ""];
+// False pois pelo menos uma fruta
+// está vazia '', o que é um valor falsy
+const arraysCheias = frutas.every((fruta) => {
+  return fruta; // false
 });
-maiorValor; // 60
+
+const numeros = [6, 43, 22, 88, 101, 29];
+const maiorQue3 = numeros.every((x) => x > 3); // true
