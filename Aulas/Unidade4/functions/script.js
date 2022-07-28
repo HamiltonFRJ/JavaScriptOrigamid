@@ -39,27 +39,73 @@
 // descricaoCarro.call({ marca: "Honda", ano: 2012 }); // Primeiro o objeto novo, this , depois os parâmetros da função;
 
 // // O valor this faz referência ao objeto criado durante a construção do objeto (Constructor Function). Podemos trocar a referência do método ao this, utilizando o call().
-const carros = ["Ford", "Fiat", "VW"];
+// const carros = ["Ford", "Fiat", "VW"];
+// const frutas = ["Banana", "Uva", "Pêra"];
+
+// carros.forEach((item) => {
+//   console.log(item);
+// }); // Log de cada Carro
+
+// carros.forEach.call(frutas, (item) => {
+//   console.log(item);
+// }); // Log de cada Carro
+
+// const ul = new Dom("ul");
+
+// ul.ativo("ativar");
+
+// console.log(ul);
+// const li = {
+//   element: document.querySelector("li"),
+// };
+// ul.ativo.call(null, "ativar");
+// ul.ativo.call(li, "ativar");
+// O novo valor de this deve ser semelhante a estrutura do valor do this original do método. Caso contrário o método não conseguirá interagir de forma correta com o novo this.
+
+// function Dom(seletor) {
+//   this.element = document.querySelector(seletor);
+// }
+
+// Dom.prototype.ativo = function (classe) {
+//   this.element.classList.add(classe);
+// };
+
+// const novoSeletor = {
+//   element: document.querySelector("li"),
+// };
+
+// Dom.prototype.ativo.call(novoSeletor, "ativar");
+
 const frutas = ["Banana", "Uva", "Pêra"];
 
-carros.forEach((item) => {
-  console.log(item);
-}); // Log de cada Carro
+// Array.prototype.mostrarThis = function () {
+//   console.log(this);
+// };
 
-carros.forEach.call(frutas, (item) => {
-  console.log(item);
-}); // Log de cada Carro
+// Ambos são a mesma coisa!!
+// Array.prototype.pop.call(frutas);
+// frutas.pop();
+// Ambos são a mesma coisa!!
 
-function Dom(seletor) {
-  this.element = document.querySelector(seletor);
-}
-const ul = new Dom("ul");
-Dom.prototype.ativo = function (classe) {
-  this.element.classList.add(classe);
+const arrayLike = {
+  0: "Item 1",
+  1: "Item 2",
+  2: "Item 3",
+  length: 3,
 };
-ul.ativo("ativar");
-console.log(ul);
 
-const li = {
-  element: document.querySelector("li"),
-};
+const li = document.querySelector("li");
+const filtro1 = Array.prototype.filter.call(li, (item) => {
+  return item.classList.contains("ativo");
+});
+filtro1; // Retorna os itens
+
+// OU
+
+const ul = document.querySelector("ul");
+const arrayUl = Array.from(ul);
+
+const filtro2 = arrayUl.filter.call(li, (item) => {
+  return item.classList.contains("ativo");
+});
+filtro2; // Retorna os itens
