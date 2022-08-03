@@ -32,9 +32,9 @@ divs.forEach((div) => {
 // Por padrão o JavaScript não aceita - (traço) como caractere válido para nomear propriedades. Então qualquer traço será removido e a letra seguinte transformada em maiúscula.
 
 const div2 = document.querySelector("[data-anima-scroll]");
-div.dataset;
+div2.dataset;
 // {animaScroll: 'left'}
-div.dataset.animaScroll; // left
-div.dataset.tempoTotal = 1000;
-// Na div vira data-tempo-total="1000"
-delete div.dataset.animaScroll; // remove o atributo
+div2.dataset.animaScroll; // left
+div2.dataset.tempoTotal = 1000;
+// Na div2 vira data-tempo-total="1000"
+delete div2.dataset.animaScroll; // remove o atributo
