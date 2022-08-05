@@ -1,0 +1,1 @@
+const ola = "Criando nova máquina de configuração";
