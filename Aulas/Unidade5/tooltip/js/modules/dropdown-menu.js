@@ -1,17 +1,17 @@
-export default function initDropdownMenu() {
-  const dropdownMenus = document.querySelectorAll("[data-dropdown]");
+export default function initDropdownMenu() {}
 
-  dropdownMenus.forEach((menu) => {
-    //menu.addEventListener('touchstart', handleClick);
-    //menu.addEventListener('click', handleClick);
+const dropdownMenus = document.querySelectorAll("[data-dropdown]");
 
-    ["touchstar", "click"].forEach((userEvent) => {
-      menu.addEventListener(userEvent, handleClick);
-    });
+dropdownMenus.forEach((menu) => {
+  //menu.addEventListener('touchstart', handleClick);
+  //menu.addEventListener('click', handleClick);
+
+  ["touchstar", "click"].forEach((userEvent) => {
+    menu.addEventListener(userEvent, handleClick);
   });
+});
 
-  function handleClick(event) {
-    event.preventDefault();
-    this.classList.toggle("active");
-  }
+function handleClick(event) {
+  event.preventDefault();
+  this.classList.toggle("active");
 }
