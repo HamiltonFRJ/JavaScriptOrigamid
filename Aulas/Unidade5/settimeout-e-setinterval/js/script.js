@@ -1,3 +1,4 @@
+/*
 function espera(item) {
   console.log(item);
 }
@@ -33,12 +34,12 @@ for (let i = 2; i < 5; i++) {
 const btn = document.querySelector("button");
 btn.addEventListener("click", handleClick);
 
-/* function handleClick(event) {
+function handleClick(event) {
   setTimeout(function () {
     this.classList.add("active");
   }, 1000);
 }
-*/
+
 // erro pois o window.classList não existe
 // Solução:
 
@@ -65,3 +66,7 @@ const meuLoop = setInterval(() => {
 }, 1000);
 
 // clearInterval(var), podemos para um intervalo com o clearInterval. Para isso precisamos atribuir o setInterval a uma variável.
+*/
+
+import exercicio from "./modules/scriptExerc.js";
+exercicio();

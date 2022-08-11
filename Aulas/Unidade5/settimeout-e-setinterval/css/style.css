@@ -1,0 +1,11 @@
+.red{
+  background-color: red;
+}
+.blue{
+  background: blue;
+}
+.start, .stop{
+  font-size: larger;
+  width: 100px;
+  height: 50px;
+}
