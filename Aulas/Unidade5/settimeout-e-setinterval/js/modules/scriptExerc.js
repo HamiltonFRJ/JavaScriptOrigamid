@@ -19,7 +19,7 @@ export default function exercicio() {
     document.body.classList.toggle("active");
   }
 
-  // setInterval(mudarClasse, 2000);
+  setInterval(mudarClasse, 2000);
 
   // Crie um cronometro utilizando o setInterval. Deve ser possível;
   // iniciar, pausar e resetar (duplo clique no pausar).
@@ -41,7 +41,7 @@ export default function exercicio() {
     iniciar.setAttribute("disabled", "");
   }
   function pausarTempo() {
-    clearInterval();
+    clearInterval(timer);
     iniciar.removeAttribute("disabled");
   }
   function resetarTempo() {
