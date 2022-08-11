@@ -29,8 +29,8 @@ export default function exercicio() {
   const tempo = document.querySelector(".tempo");
 
   iniciar.addEventListener("click", iniciarTempo);
-  iniciar.addEventListener("click", pausarTempo);
-  iniciar.addEventListener("dblclick", resetarTempo);
+  pausar.addEventListener("click", pausarTempo);
+  pausar.addEventListener("dblclick", resetarTempo);
 
   let i = 0;
   let timer;
@@ -42,7 +42,7 @@ export default function exercicio() {
   }
   function pausarTempo() {
     clearInterval();
-    iniciar.removeAttribute("disabled", "");
+    iniciar.removeAttribute("disabled");
   }
   function resetarTempo() {
     tempo.innerText = 0;
