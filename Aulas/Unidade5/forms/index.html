@@ -10,13 +10,34 @@
 <body>
   <form name="contato" id="contato">
     <label for="nome">Nome</label>
-    <input type="text" name="nome" id="nome">
+    <input type="text" name="nome" id="nome" required>
     <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
+    <span class="erro"></span>
     <label for="mensagem">Mensagem</label>
     <textarea name="mensagem" id="mensagem"></textarea>
+    <!-- <select name="cores" id="cores">
+      <option value="blue">Azul</option>
+      <option value="red">Vermelho</option>
+    </select> -->
+    <!-- <input type="color">
+    <input type="date">
+    <input type="number">
+    <input type="range">
+    <input type="password"> -->
+    <!-- <label for="identidade">Possui identidade?</label>
+    <input type="checkbox" value="identidade" id="identidade">
+    <label for="casado">Casado?</label>
+    <input type="checkbox" value="casado" id="casado">
+    <label for="nivel">Experiência</label>
+    <label for="nivelJr">Jr</label>
+    <input type="radio" name="nivel" id="nivelJr" value="Jr">
+    <label for="nivelPl">Pl</label>
+    <input type="radio" name="nivel" id="nivelPl" value="Pl">
+    <label for="nivelSr">Sr</label>
+    <input type="radio" name="nivel" id="nivelSr" value="Sr"> -->
   </form>
-  <span class="texto"></span>
+  <span class="texto"></span> 
   <script type="module" src="js/script.js"></script>
 </body>
 </html>
