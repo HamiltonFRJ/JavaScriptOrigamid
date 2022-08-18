@@ -1,0 +1,5 @@
+Síncrono: Espera a tarefa anterior acabar para continuar para próxima.
+
+Assíncrono: Move para a proxima tarefa antes da anterior terminar. O trabalho será executado no 'fundo' e quando terminado, será colocado na fila (Task Queue).
+
+Exemplos: setTimeout, Ajax, Promises, Fetch, Asyc.
