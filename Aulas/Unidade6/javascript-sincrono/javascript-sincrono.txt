@@ -3,3 +3,9 @@ Síncrono: Espera a tarefa anterior acabar para continuar para próxima.
 Assíncrono: Move para a proxima tarefa antes da anterior terminar. O trabalho será executado no 'fundo' e quando terminado, será colocado na fila (Task Queue).
 
 Exemplos: setTimeout, Ajax, Promises, Fetch, Asyc.
+
+Vantagens:
+
+Carregamento no fundo: Não trava o script. É possível utilizar o site enquanto o processamento é realizado no fundo.
+Função ao término: Podemos ficar de olho no carregamente e executar uma função assim que ele terminar.
+Requisições ao Servidor: N"ao precisamos recarregar a página por completo à cada requisição feita ao servidor 
