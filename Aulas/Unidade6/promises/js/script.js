@@ -1,15 +1,15 @@
 // new Promise()
 // Promise é uma função construtora de promessas. Existem dois resultadosp ossíveis de uma promessa, ela pode ser resolvida, com a execução do primeiro argumento, ou rejeitada se o segundo argumento for ativado.
-const promessa = new Promise((resolve, reject) => {
-  let condicao = true;
-  if (condicao) {
-    setTimeout(() => {
-      resolve({ nome: "Hamilton", idade: 21 });
-    }, 1000);
-  } else {
-    reject(Error("Um erro ocorreu."));
-  }
-});
+// const promessa = new Promise((resolve, reject) => {
+//   let condicao = true;
+//   if (condicao) {
+//     setTimeout(() => {
+//       resolve({ nome: "Hamilton", idade: 21 });
+//     }, 1000);
+//   } else {
+//     reject(Error("Um erro ocorreu."));
+//   }
+// });
 
 // Then -> ativa apenas quando a promise é resolvida
 // promessa.then((resolucao) => console.log(resolucao));
@@ -17,20 +17,22 @@ const promessa = new Promise((resolve, reject) => {
 // then().then
 // O método then() retorna outra Promise. Podemos colocar then() e fazer um encadeamento de promessas. O valor do primeiro argumento de cada then, será     o valor do retorno do anterior
 
-const retorno = promessa
-  .then((resolucao) => {
-    resolucao.profissao = "Designer";
-    return resolucao;
-  })
-  .then((resolucao) => {
-    console.log(resolucao);
-  })
-  .catch((rejeitada) => {
-    console.log(rejeitada);
-  })
-  .finally(() => {
-    console.log("Acabou O_O");
-  });
+// const retorno = promessa
+//   .then((resolucao) => {
+//     resolucao.profissao = "Designer";
+//     return resolucao;
+//   })
+//   .then((resolucao) => {
+//     console.log(resolucao);
+//   })
+//   .catch((rejeitada) => {
+//     console.log(rejeitada);
+//   })
+//   .finally(() => {
+//     console.log("Acabou O_O");
+//   });
+
+// Outra opção de catch
 
 // const retorno = promessa
 // .then((resolucao) => {
@@ -64,3 +66,16 @@ const dados = new Promise((resolve) => {
 });
 
 const tudoCarregado = Promise.all([login, dados]);
+
+tudoCarregado.then((resolucao) => {
+  console.log(resolucao);
+});
+
+// Promise.race()
+// Retornará uma nova promise assim que a primeira promise for resolvida ou rejeitada. Essa nova promise terá a resposta da primeira resolvida.
+
+const raceCarregado = Promise.race([login, dados]);
+
+raceCarregado.then((resolucao) => {
+  console.log(resolucao);
+});
