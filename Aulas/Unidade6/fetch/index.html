@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <title>Fetch</title>
 </head>
 <body>
-  <h1></h1>
-  <img src="" alt="">
-  <div class="conteudo"></div>
-  <script type="module" src="js/script.js"></script>
+  <form name="cepForm" id="cepForm">
+    <label for="cep">Digite o CEP:</label>
+    <input name="cep" type="number" id="cep" required>
+    <input type="button" value="Buscar" id="btnBuscar">
+  </form>
+  <form name="bitcoin">
+    <label for="valorBitcoin">Bitcoin:</label>
+    <label for="valorBitcoin" class="valorBitcoin"></label>
+  </form>
+  <div id="enderecoFinal"></div>
+  <script type="module" src="js/scriptExerc.js"></script>
 </body>
 </html>
