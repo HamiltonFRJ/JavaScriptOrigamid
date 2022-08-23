@@ -1,0 +1,29 @@
+JSON
+JavaScript Object Notation, é um formato de organização de dados, compostos por um conjunto de chave e valor. As aspas duplas são obrigatórias, tanto na chave quanto no valor quanto este for string.
+{
+  "id": 1,
+  "nome": "Hamilton"
+}
+JSON pode interpretar diferentes linguagens, não apenas JavaScript.
+{
+ "id": 1,
+ "faculdade": true,
+ "pertences": [
+ "lapis",
+ "caneta",
+ "caderno"
+ ],
+ "endereco": {
+ "cidade": "Rio de Janeiro",
+ "pais": "Brasil"
+ },
+ "casado": null
+}
+
+Não pode haver vírgula no ultimo item de um array ou de um objeto
+
+JSON.parse() e JSON.stringiy()
+
+JSON.parse() irá transformar um texto JSON em um objeto JavaScript.
+
+JSON.stringiy() irá transformar um objeto JavaScript em uma string no formato JSON.
