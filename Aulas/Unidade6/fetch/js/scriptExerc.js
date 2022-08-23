@@ -70,3 +70,18 @@ bitcoin();
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
 // clicar em próxima
+
+const btnPiada = document.querySelector(".btnPiada");
+const piada = document.querySelector(".piada");
+
+btnPiada.addEventListener("click", proxPiada);
+
+function proxPiada(event) {
+  fetch("https://api.chucknorris.io/jokes/random")
+    .then((response) => response.json())
+    .then((body) => {
+      piada.innerText = body.value;
+    });
+}
+
+proxPiada();
