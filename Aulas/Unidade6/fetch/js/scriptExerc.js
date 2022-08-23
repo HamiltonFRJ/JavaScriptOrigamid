@@ -47,7 +47,26 @@ function pesquisaCep(cep) {
 // atualize este valor a cada 30s
 
 const valorBitcoin = document.querySelector(".valorBitcoin");
-console.log(valorBitcoin);
+
+function bitcoin() {
+  fetch("https://blockchain.info/ticker")
+    .then((response) => response.json())
+    .then((body) => {
+      // const converteValor = body.BRL.buy.toLocaleString("pt-BR", {
+      //   style: "currency",
+      //   currency: "BRL",
+      // });
+      valorBitcoin.innerText = "R$ " + body.BRL.buy;
+    });
+}
+
+bitcoin();
+
+// setInterval(() => {
+//   bitcoin;
+//   console.log("Atualizou");
+// }, 1000);
+
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
 // clicar em próxima
