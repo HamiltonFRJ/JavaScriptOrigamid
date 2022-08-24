@@ -1,0 +1,69 @@
+API
+Application
+Um servidor, aplicativo, objeto JavaScript ou qualquer outra coisa que você interaja através de comandos. Ao digitar um a URL, estamos utilizando a API do browser para se comunicar com a API do servidor.
+
+Programming 
+Programação, isso significa ue um comando irá encadear uma cadeia de eventos pré-definidos. O resultado esperado é geralmente o mesmo.
+
+Interface
+A interface são os comandos criados para permitir a interação com a aplicação. ex. 'VIOLAO'.toLowerCase() é um método que faz parte da interface do objeto String. A interação com a interface retorna um efeito / resposta.
+
+Exemplos de API: 
+https://api.github.com/users/origamid
+https://api.github.com/users/origamid/followers
+
+Array / Element
+[].map();
+[].filter();
+Element.classList;
+Element.attributes;
+
+Tempo
+https://www.metaweather.com/api/location/455825
+
+Outras API's 
+https://github.com/toddmotto/public-apis
+
+Algumas API's necessitam de autorização para serem usadas, e isso depende de cada uma, ou seja, a forma de conseguir autorização não é a mesma. Pra saber qual é autorizada e qual não é, pode-se conferir a tabela do link do github, apresentado anteriormente.
+
+HTTP
+Hypertext Transfer protocol é o protocolo utilizado para enviarmos/recebermos arquivos e dados na Web.
+
+ULR e method
+Uma requisição HTTP é feita através de uma URL. O método padrão é o GET, mas existem outros como POST, UPDATE, DELETE, HEADER.
+
+GET
+Puxa informação, utilizado para pegar posts, usuários, etc. Não é necessário informar que é o método GETm pois este é o padrão
+
+POST
+Utilizado para criar posts, usuários e etc.
+
+PUT
+Geraletne utilziado para atualizar informações.
+
+DELETE 
+Deleta uma informação.
+
+HEADER
+Puxas apenas os headers.
+
+Headers
+
+Cache-Control
+Tempo que o arquivo deve ficar em cache em segundos. Ex: public, max-age=3600
+
+Content-Type
+Tipo de conteúdo. Ex: text/html; charset=utf-8. Indicar o tipo de arquivo principalmente em métodos POST e PUT.
+
+Lista de Headers
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+CORS
+Cross-Origin Resouce Sharing, gerencia como deve ser o compartilhamento de recursos entre diferentes origens.
+
+É definido n oservidor se é permitido ou não o acesso dos recursos atrave´s de scripts por outros sites. Utilizando o Access-Control-Allow-Origin.
+
+Se o servidor não permitir o acesso, este será bloqueado. É possível passsar por cima do bloqueio utilizando um proxy.
+
+CORS é um acordo entre browser / servidor ou servidor / servidor.
+Ele serve para dar certa proteção ao browser, mas não inviolável.
