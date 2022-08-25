@@ -9,3 +9,6 @@ Para lidarmos com erros nas promises, podemos utilizar o try e o catch na funç�
 
 Iniciar Fetch ao mesmo tempo
 Não precisamos esperar um fetch para começarmos outro. Porém precisamos esperar a resposta resolvida do fetch para transformarmos a response em json.
+
+Promise
+O resultado da expressão à frente de await tem que ser uma promise. E o retorno do await será sempre o resultado desta promise.
