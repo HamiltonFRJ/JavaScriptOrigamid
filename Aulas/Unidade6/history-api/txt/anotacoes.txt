@@ -13,3 +13,5 @@ window.addEventListener('popState', () => {
 
 Fetch e History
 Ao puxarmos dados via fetch api, o url da página continua o mesmo. Ao combinar fetch com a history api conseguimos simular uma navegação real entre páginas, sem a necessidade de recarregamento da mesma.
+
+Parei em 15 minutos
