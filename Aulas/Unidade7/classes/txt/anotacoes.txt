@@ -1,2 +1,11 @@
 Class
 O ES6 trouxe uma nova sintaxe para implementarmos funções construtoras. Agora podemos utilizar a palavra chave class. É considerada syntactical sugar, pois por baixo dos panos continua utilizado o sistema de protótipos de uma função construtora para criar a classe. 
+
+Propriedades
+Podemos passar qualquer valor dentro de uma propriedade
+
+Static vs Prototype
+Por padrão todos os métodos criados dentro da classe irão para o protótipo da mesma. Porém podemos criar métodos diretamente na classe utilizando a palavra chave static. Assim como [].map() é um método de uma array e Array.from() é um método de construtor Array.
+
+Static
+Você pode utilizar um me'todo static para retornar a própria classe com propriedades já pré definidas.
