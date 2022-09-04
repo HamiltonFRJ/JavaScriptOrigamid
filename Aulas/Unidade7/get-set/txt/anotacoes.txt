@@ -1,0 +1,14 @@
+Get e set
+Podemos definir comportamentos diferentes de get e set para um método.
+
+Valor estatico
+Ser definirmos apenas o get de um método, teremos então um valor estático que não será possível mudarmos.
+
+Set
+Eu posso ter um método com set apenas, que modifique outras propriedades de um objeto.
+
+Class
+Assim como em um objeto, as classes podem ter métodos de get e set também. 
+
+Set e Class
+Com o set podemos modificar apenas parte do element de  get. É comum definirmos variáveis privadas, utilizando o underscore _privada.
