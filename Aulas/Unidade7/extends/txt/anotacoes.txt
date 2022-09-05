@@ -1,0 +1,5 @@
+Subclasses
+É possível criarmos uma subclasse, esta irá tger acesso aos métodos da classe à qual ela estendeu através do seu protótipo.
+
+Super
+É possível tilizar a palavra chave super para falarmos com a classe que é pai e acessarmos os seus métodos e propriedades.
