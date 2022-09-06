@@ -25,7 +25,7 @@ const subtrair = (a,b) => a - b;
 subtrair(4,2); // 2
 
 Estrutura / Preferência
-Geralmente o uso entre expression / declaration é uma questão de preferência. Function Expression força a criação da memsa antes de sua ativação, o que pode contribuir para um código mais estruturado.
+Geralmente o uso entre expression / declaration é uma questão de preferência. Function Expression força a criação da mesma antes de sua ativação, o que pode contribuir para um código mais estruturado.
 
 IIFE - Immediately Invoked Function Expression 
 Antes da introdução de modules e da implementação do espoco de bloco, a forma mais comum utilizada para isolarmos o escopo de um códgio JavaScript era através das chamadas IIFE's.
