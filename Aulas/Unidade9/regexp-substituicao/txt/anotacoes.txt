@@ -1,0 +1,19 @@
+Referência da Seleção
+É possível utilizarmos o $& durante o momento da substituição para fazermos uma referência à seleção.
+
+Grupo de captura
+É possível definirmos diferentes grupos de captura, que poderão ser referenciados duratne a substituição. Bsta envolvermos um grupo entre () parênteses. A referência se cada grupo será feito com $n, sendo o primeiro $1.
+/(\w+)@([\w.]+)/gi
+
+Mais de um grupo
+Podemos definir quantos grupos de captura quisermos.
+
+Mais do que Captura apenas
+Um grupo também serve para agruparmos uma sequência de caracteres que queremos em repetição.
+/(?:ta)+/gi
+O ?: cancela a captura de grupo, mas mantem a seleção.
+
+Positive Lookahead
+Faz a seleção dos itens que possírem o padrão dentro de (?=) à sua frente. Apesar de utilizar () parênteses o positive lookahead não captura grupo.
+/\d(?=itemAFrente)/gi
+/\d(?!px)/gi - todos digitos que não tiverem px na frente.
