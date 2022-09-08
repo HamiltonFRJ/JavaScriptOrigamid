@@ -72,3 +72,16 @@ O sinal \b irá indicar que pretendemos fazer uma seleção que deve ter início
 
 Not Word Boundary \B
 É o contrário do \b
+
+Anchor Beginning
+Com o ^ é possível informar que a busca deve ser iniciada no início da linha.
+
+Flag M
+Seleciona MultiLinha colocando $ no final
+Com a flag m de multiline, podemos informar que a busca de início ^ e final $ de linha devem ocorrer em todas as linhas disponíveis.
+
+Line Feed \n
+O \n irá selecionar o final de uma linha, quando criamos uma nova.
+
+Unicode \u
+O \u irá selecionar o respectivo caracter unicode, de acordo com o código passado em \uXXXXX . Ex: \u0040 seleciona o @.
