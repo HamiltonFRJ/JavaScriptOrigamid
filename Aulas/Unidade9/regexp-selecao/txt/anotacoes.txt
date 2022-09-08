@@ -1,4 +1,8 @@
 Regular Expression
+
+https://regexr.com/
+https://unicode-table.com/pt/
+
 Regexp ou Regex são expresões utilizadas para realizarmos buscas / substituições de padrões em strings. Os padrões devem ser colocados entre //. Geralmente vamos utilizá-las nos métodos .replace() e .split()
 
 Literal
@@ -31,3 +35,40 @@ Conferir a ordem na tabela unicode, vai pegar na ordem dos caracteres da tabela
 
 Negar
 Utilizando o acento cincunflexo podemos negar caracteres. Ou seja, pegue tudo que não seja [^a]
+
+Word
+O \w irá selecionar qualquer caracter alfanumérico e o underline. É a mesma coisa que [A-Za-z0-9_]
+O \W irá selecionar tudo que não for alfanumérico
+O \d tudo que é dígito
+O \D tudo que não for dígito
+O \s tudo que for espaço, quebra de linha e tab
+O \S tudo que não for espaço, quebra de linha e tab
+
+Quantificador
+é possíovel selecionar caracteres seguidos, como /bbb/g irá selecionar apenas bbb. Comn as chaves podemos indicar repetição /b{3}/g. Agora ele está fazendo uma seleção completa e não caracter por caracter.
+É possível definir uma margem 
+/b{2,3}/g - a partir de 2 b até 3
+/b{2,}/g - a partir de 2
+
+\w{1,} - a partir de um caractere alfanumerico
+
+Mais+
+\i+\ - Até um i ou mais de um
+
+Asterisco *
+O sinal * siginifica que devemos selecionar quanto existir 0 ou mais ocorrências.
+/d\w*/g
+
+Opcional ?
+O sinal ? significa que o caracter é opcional, pode ou não existir.
+/regexp?/
+
+Alternado | 
+O sinal irá selecionar um ou outro. java|php
+
+Word Boundary \b
+O sinal \b irá indicar que pretendemos fazer uma seleção que deve ter início e fim de não caracteres \w.
+\bpropor\b - que termine em NÃO W.
+
+Not Word Boundary \B
+É o contrário do \b
