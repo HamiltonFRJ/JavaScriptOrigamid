@@ -1,0 +1,8 @@
+Regexp Cosntructor
+Toda Regexp é criada com o constructor RegExp() e herda as suas propriedades e métodos. Existem diferenças na sintaxe de uma Regexp criada diretamente em uma variável e de uma passada como argumento de RegExp.
+
+Propriedades
+Uma regexp possui propriedades com informações sobre as flags e o conteúdo da mesma.
+
+regexp.test()
+O método test() verifica se existe ou não uma ocorrência da busca. Se existir ele retorna true. A próxima vefz que chamarmos o mesmo, ele irá começar do iondex em que parou no último true.
