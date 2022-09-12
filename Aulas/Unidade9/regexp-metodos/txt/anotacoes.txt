@@ -16,3 +16,9 @@ Serve para distribuirmos uma string em uma array, quebrando a string no argument
 
 str.replace()
 É o mais interessante por permitir a utilizaç	ao de funções de callback para cada match que ele der com a Regexp.
+
+Grupos de captura
+É possível definirmos quantos grupos de captura quisermos.
+
+Callback
+Para substituições mais complexas, podemos utilizar um callback como segundo argumento do replace. O valor do return será o que irá substituir cada match.

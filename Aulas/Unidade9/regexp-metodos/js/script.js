@@ -60,4 +60,42 @@ const script = /Script/g;
 const resultado = frase2.split(script);
 console.log(resultado);
 
-const tags = "<ul><li>Item 1<li/><li>Item 2</li><ul>";
+const tags = "<ul><li>Item 1<li/><li>Item 2</li></ul>";
+
+// const resultado2 = tags.replace("ul", "div");
+// Só substitui o primeiro ul
+// Ao utilizar RegExp, substitui todos selecionados
+
+const resultado2 = tags.replace(/(?<=<\/?)\w+/g, "$& class='ativa'");
+console.log(resultado2);
+
+const emails = `empresa@email.com
+contato@email.com
+suporte@email.com
+`;
+
+console.log(emails.replace(/(\w+@)[\w.]+/g, "$1gmail.com"));
+// $1 - Grupo 1
+// $2 - Grupo 2
+// $& - Grupo Total
+
+const regexp3 = /(\w+)(@[\w]+)/g;
+const emails2 = `joao@homail.com.br
+marta@gemail.com
+bruna@oulook.com
+`;
+
+console.log(emails2.replace(regexp3, function (...args) {
+  console.log(args);
+  if (args[2] === "@homail") {
+    return `${args[1]}@hotmail.com`;
+  } else if (args[2] === "@gemail.com") {
+    return `${args[1]}@gmail.com`;
+  } else if (args[2] === "@oulook") {
+    return `${args[1]}@outlook.com`;
+  } else {
+    return "x";
+  }
+}))
+
+
