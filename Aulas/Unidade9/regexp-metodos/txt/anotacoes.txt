@@ -6,3 +6,13 @@ Uma regexp possui propriedades com informações sobre as flags e o conteúdo da
 
 regexp.test()
 O método test() verifica se existe ou não uma ocorrência da busca. Se existir ele retorna true. A próxima vefz que chamarmos o mesmo, ele irá começar do iondex em que parou no último true.
+
+str.match()
+É um método de strings que pode receber como arguemtno uma Regexp. Existe uma diferença de resultado quando utilizamos a flag g ou não
+Caso não haja match ele retornará null
+
+str.split()
+Serve para distribuirmos uma string em uma array, quebrando a string no argumento que for passado. este método irá remover o match da array final.
+
+str.replace()
+É o mais interessante por permitir a utilizaç	ao de funções de callback para cada match que ele der com a Regexp.

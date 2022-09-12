@@ -38,3 +38,26 @@ let regexpResult;
 while ((regexpResult = regexpJava.exec(frase)) !== null) {
   console.log(regexpResult);
 }
+
+const regexp2 = /\w{2,}/g;
+const regexpSemG = /\w{2,}/;
+
+const frase2 = "JavaScript, TypeScript e CoffeScript";
+
+console.log(frase2.match(regexp2));
+//[ 'JavaScript', 'TypeScript', 'CoffeScript' ]
+
+console.log(frase2.match(regexpSemG));
+// [
+//   'JavaScript',
+//   index: 0,
+//   input: 'JavaScript, TypeScript e CoffeScript',
+//   groups: undefined
+// ]
+
+const script = /Script/g;
+
+const resultado = frase2.split(script);
+console.log(resultado);
+
+const tags = "<ul><li>Item 1<li/><li>Item 2</li><ul>";
