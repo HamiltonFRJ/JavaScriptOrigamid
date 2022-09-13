@@ -4,5 +4,3 @@ Nele você pode ver todo meu andamento, os comentários que achei relevante inse
 ao final do nome.
 
 Espero que goste!
-
-"Hello World!"
