@@ -1,0 +1,2 @@
+Função: adicionarEvento()
+É importante utilizar o arrow function nessa ocasião, por que ao utilizar o this como arrow function, ele referencia o ValidarCPF - Classe, caso contrário, seria referência do input - HTML
