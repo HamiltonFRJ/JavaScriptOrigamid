@@ -14,23 +14,38 @@ export default class ValidarCPF {
   }
   validar(cpf) {
     const matchCPF = cpf.match(/(?:\d{3}[.-\s]?){3}\d{2}/g);
-    return (matchCPF && matchCPF[0] === cpf);
+    return matchCPF && matchCPF[0] === cpf;
   }
   validarNaMudanca(cpfElement) {
     if (this.validar(cpfElement.value)) {
       cpfElement.value = this.formatar(cpfElement.value);
+      cpfElement.classList.add("valido");
+      cpfElement.classList.remove("erro");
+      cpfElement.nextElementSibling.classList.remove("ativar");
     } else {
-
+      cpfElement.classList.add("erro");
+      cpfElement.classList.remove("valido");
+      cpfElement.nextElementSibling.classList.add("ativar");
     }
   }
   adicionarEvento() {
     // !README: Linha 1 e 2 - anotacoes.txt
     this.element.addEventListener("change", () => {
       this.validarNaMudanca(this.element);
-    })
+    });
+  }
+  adicionarErroSpan() {
+    const erroElement = document.createElement("span");
+    erroElement.classList.add("erro-text");
+    erroElement.innerText = "CPF Inválido";
+    this.element.parentElement.insertBefore(
+      erroElement,
+      this.element.nextElementSibling
+    );
   }
   iniciar() {
     this.adicionarEvento();
+    this.adicionarErroSpan();
     return this;
   }
 }
