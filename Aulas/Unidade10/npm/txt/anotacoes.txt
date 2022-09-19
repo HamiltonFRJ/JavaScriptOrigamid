@@ -1,0 +1,48 @@
+NPM (Node Package Manager)
+
+Gerenciador de Pacotes
+Feito para Node.js
+
+Linhad e comando 
+$ npm install lodash
+
+https://www.npmjs.com/
+
+$ npm -v
+Apresenta a versão instalada do Node no computador.
+
+$ npm install lodash
+Comando para a instalação do node_modules
+
+Instalar Pacotes
+
+$ npm install lodash
+Instala o pacote lodash ndiretório atual da linha de comando
+
+$ npm install eslint -g
+Instala o eslint globalmente (No mac é necessário o sudo para instalar globalmente.)
+
+$ npm update lodash
+Atualiza o lodash
+
+$ npm uninstall lodash
+Desinstala o pacote lodash
+
+Package.json
+
+package.json 
+Arquivo local com as configurações e dependências de pacotes NPM
+
+$ npm init 
+Inicia uma nova configuração local no npm
+
+$ npm install 
+Instala todas as depedências listadas no arquivos package.json
+
+Arquivos Invisíveis
+Windows
+Exibir > Itens Ocultos
+
+MAC
+$ defaults write com.apple.Finder AppleShowAllFiles true
+$ killall Finder

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "name": "javascriptorigamid",
+  "description": "Esse projeto é de estudo do curso JavaScript Avançado, apresentado pela Origamid.\r Nele você pode ver todo meu andamento, os comentários que achei relevante inserir, e qual foi minha forma de tratar os exercícios, que possuem a nomenclatura \"Exerc\"\r ao final do nome.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamiltonFRJ/JavaScriptOrigamid.git"
+  },
+  "author": "Hamilton Francisco Ramos Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamiltonFRJ/JavaScriptOrigamid/issues"
+  },
+  "homepage": "https://github.com/HamiltonFRJ/JavaScriptOrigamid#readme"
+}
