@@ -1,0 +1,46 @@
+Linha de comando CLI
+
+Interagir com o Computador através de texto
+Comando começandoi com $ (Unix) ou > (Win)
+
+UNIX Mac e linux vs Windows
+Bach e Zsh Unix | CMD e PowerShell Windows
+
+https://ss64.com
+
+Movimentar (Bash)
+$ cd sites
+Move para a pasta sites
+
+$ cd ..
+Move para a pasta anterior
+
+$ cd ~/Desktop/sites
+Move para a pasta sites dentro de Desktop
+
+$ cd ~
+Move para o diretório principal do sistema /home
+
+$ ls 
+Mostra o que tem no diretório
+
+$ ls -all
+Mostra o que tem no diretório, porém, com mais detalhes
+
+$ touch script.js
+Cria o arquivo script.js, no diretório que já estiver pré-selecionado
+
+$ mkdir js
+Cria a pasta js no diretório já selecionado.
+
+$ rm script.js
+Remove o arquivo script.js do diretório
+
+$ rm -r js
+Remove a pasta js do deretório selecionado.
+
+setas
+Para cima e para baixo para navegar pelos comandos utilizados anteriormente.
+
+tab
+Auto-completa o comando
