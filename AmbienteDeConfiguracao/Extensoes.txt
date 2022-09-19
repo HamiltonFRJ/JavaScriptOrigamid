@@ -3,3 +3,4 @@ VSCode icons
 Live Server
 Prettier
 Origamid Theme
+Material Icon Theme - Philipp Kief
