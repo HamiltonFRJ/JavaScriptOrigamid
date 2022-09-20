@@ -4,3 +4,4 @@ Live Server
 Prettier
 Origamid Theme
 Material Icon Theme - Philipp Kief
+ESLint
