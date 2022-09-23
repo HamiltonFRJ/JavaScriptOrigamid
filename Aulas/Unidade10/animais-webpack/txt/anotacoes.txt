@@ -1,0 +1,15 @@
+Webpack
+Bundler
+Agrupa / processa diversos arquivos e otimiza os mesmos.
+
+Altamente configurável
+Por isso é complexo.
+
+https://webpack.js.org/
+
+$ npm install --save-dev webpack webpack-cli 
+Instala o web´pack e a cli do mesmo. Ter package.json antes.
+
+$ npx webpack ./js/script.js -o ./main.js
+Irá agrupar todo o código, otimizar e mais. Utilizar npx é a mesma coisa que utilizar node_modules/.bin/webpack. Facilita para utilizarmos cli's instaladas localmente ao invés de globalmente.
+
