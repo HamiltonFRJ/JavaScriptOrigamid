@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "eslint": "^8.24.0",
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.21"
+  }
+}
