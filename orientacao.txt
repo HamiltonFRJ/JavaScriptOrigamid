@@ -1,1 +1,0 @@
-Organizar os arquivos eslint e package por repositorio, utilizando o cd e ls para separar a instalação em cada local, e efetuar a desisntalação.
