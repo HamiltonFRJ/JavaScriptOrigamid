@@ -13,3 +13,13 @@ Instala o web´pack e a cli do mesmo. Ter package.json antes.
 $ npx webpack ./js/script.js -o ./main.js
 Irá agrupar todo o código, otimizar e mais. Utilizar npx é a mesma coisa que utilizar node_modules/.bin/webpack. Facilita para utilizarmos cli's instaladas localmente ao invés de globalmente.
 
+NPM Scripts
+Permite definirmos una linha de comando inteira, que será ativada com npm run nomeScript. Não precisamos utilizar o npx aqui.
+
+"scripts": {
+    "build": "webpack --mode production ./js/script.js -o ./main.js --watch",
+    "dev": "webpack --mode develplment ./js/script.js -o ./main.js --watch"
+  },
+
+--mode define o modo de compilação
+--watch define se deve ficar observando alterações
