@@ -32,3 +32,27 @@ $ npm install lodash
 
 import $ from "jquery";
 import $ from "lodash";
+
+Babel
+
+Compilador
+Transforma código novo em código antigo. Ex = cosnt nome = 'Andre'; vira var nome = 'Andre';.
+
+Broser suporte
+Para que um browser possa suportar algo novo de JavaScript é preciso que ele esteja atualizado, mas nem todo usuário possui a versão do browser instalada.
+
+Can I Use
+O site https://caniuse.com/ mostra em quais browsers a novidades está disponível ou não.
+
+Polyfill
+Cria métodos / funções com o mesmo nome das atuais, porém utilizando código antigo para permitir o uso em browsers que não possuem a API.
+
+Transpiler
+Transforma código novo em código antigo. Ou seja, transforma const em var.
+
+Instalar Babel
+https://babeljs.io/docs/en/usage
+
+$ npm install --save-dev @babel/core @babel/preset-env @babel/plugin-transform-runtime babel-loader
+
+Instala o babel, as configurações parões e o loader para o WebPack
