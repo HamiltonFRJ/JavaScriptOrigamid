@@ -23,3 +23,12 @@ Permite definirmos una linha de comando inteira, que será ativada com npm run n
 
 --mode define o modo de compilação
 --watch define se deve ficar observando alterações
+
+Script Externos 
+Podemos facilmente importar scripts externos instalando os mesmo através do NPM e utilizando o WebPack para fazer o bundler final.
+
+$ npm install jquery
+$ npm install lodash
+
+import $ from "jquery";
+import $ from "lodash";
