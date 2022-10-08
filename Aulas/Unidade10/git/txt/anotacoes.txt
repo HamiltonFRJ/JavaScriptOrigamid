@@ -23,3 +23,10 @@ $ git status
 Mostra as mudanças
 
 $ git commit -m "Descricao"
+
+Adicionar repositório remoto
+$ git remote add origin 
+https://github.com/seuusuario/seurepositorio.git
+
+Push do primeiro commit
+$ git push -u origin master
