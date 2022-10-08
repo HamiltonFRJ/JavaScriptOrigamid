@@ -30,3 +30,15 @@ https://github.com/seuusuario/seurepositorio.git
 
 Push do primeiro commit
 $ git push -u origin master
+
+Branching
+Branch
+Umas das principais vantagens do git é a possibilidade de criarmos "ramificações. Assim podemos trabalhar em funcionalidades adicionais para um projeto, sem modificarmos o "ramificação principal, o master.
+
+$ git brach nomeBranch
+Toda vez que formos adicionar uma nova funcionalidade, devemos iniciar criando um novo branch ao invéz de fazermos alterações direto no master. O que for modificado no branch não afetará o master.
+
+$ git checkout nomeBranch
+Irá mudar de branch. Podemos usar o atalho:
+$ git ckeckout -b novoBranch 
+Assim, ele cria e muda de branch ao mesmo tempo. 
