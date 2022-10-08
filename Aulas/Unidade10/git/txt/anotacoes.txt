@@ -1,0 +1,25 @@
+Git
+Sistema de controle de versões. Facilita o trabalho em equiep e o controle de mudanças entre arquivos e diretórios.
+
+GitHub
+Plataforma online de hospedagem para repositórios Git. Existem outras como GitLab e Bitbucket.
+
+Instalar o git 
+https://git-scm.com
+
+Configurar Nome 
+$ git config --global user.name "Seu nome"
+
+Configurar Email
+$ git config --global user.email "Seu email"
+
+Inicia um repositório
+$ git init
+
+$ git add style.css
+Adiciona um arquivo style.css ao index do git. Com o $git add -A , adicionamos todos os arquivos.
+
+$ git status
+Mostra as mudanças
+
+$ git commit -m "Descricao"
