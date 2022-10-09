@@ -67,3 +67,14 @@ Ao usar o $ git commit você entra no modo completo de comentário, com um edito
 
 Bitbucket
 Permite repositórios privados e gratuitos. https://bitbucket.org/product
+
+Github Pages
+
+Criar repositório
+O nome deve ser seuUsuario.github.io
+
+HTML Simples
+O site só funcionará em html/css/js simples, sem linguagem de servidor
+
+Qualquer projeto
+Qualquer projeto poderá ter uma página para o mesmo. Vá em Settings > Github Pages > Selecione master branch e salve. E acesse seuUsuario.github.io/repositorio/
