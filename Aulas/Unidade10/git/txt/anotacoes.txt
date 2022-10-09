@@ -58,3 +58,12 @@ $ git merge master
 $ git add . || $ git add -A
 $ git commit -m "nome do commit"
 $ git push
+
+.gitignore
+Lista de arquivos que não devem ser manipulados pelo git. node_modules é um bom exemplo.
+
+Commit sem texto
+Ao usar o $ git commit você entra no modo completo de comentário, com um editor de texto direto na linha de comando. Utilize esc + :wq para sair do mesmo.
+
+Bitbucket
+Permite repositórios privados e gratuitos. https://bitbucket.org/product
